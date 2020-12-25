@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d221c11"],{cc61:function(n,u,c){"use strict";c.r(u),c.d(u,"default",(function(){return a}));c("d81d");var e=null;function a(n,u){var c;e=u,n.map((function(n){"RID"===n["key"]&&(c=n["value"])})),e.$router.push({name:"PreBusiness",params:{docunid:c}})}}}]);

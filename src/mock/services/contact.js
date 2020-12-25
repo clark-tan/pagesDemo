@@ -1,5 +1,0 @@
-import Mock from 'mockjs'
-
-const getContactUsInfo = { 'code': 0, 'data': { 'rowsList': [{ 'rid': '677b12c7-4cdb-44d2-80d7-910ac1cc7d16', 'jid': null, 'name': '北方数码', 'mobilephone': '13922113294', 'telephone': '0556-4047852', 'postcode': '246131', 'longitude': '116.46', 'latitude': '39.92', 'address': '中南海西花厅', 'url': 'www.baidu.com', 'servertime': '全天无休' }], 'hideColumns': ['rid', 'jid'], 'columns': [{ 'label': '名称', 'type': 'text', 'key': 'name' }, { 'label': '手机', 'type': 'text', 'key': 'mobilephone' }, { 'label': '电话', 'type': 'text', 'key': 'telephone' }, { 'label': '邮编', 'type': 'text', 'key': 'postcode' }, { 'label': '地址', 'type': 'text', 'key': 'address' }, { 'label': '网址', 'type': 'text', 'key': 'url' }, { 'label': '服务时间', 'type': 'text', 'key': 'servertime' }, { 'label': '经度', 'type': 'text', 'key': 'longitude' }, { 'label': '记录标识', 'type': 'text', 'key': 'rid' }, { 'label': '业务受理号', 'type': 'text', 'key': 'jid' }, { 'label': '纬度', 'type': 'text', 'key': 'latitude' }] }, 'desc': '成功！' }
-
-Mock.mock(/\/light_api\/contact\/public\/getContact/, 'get', getContactUsInfo)
