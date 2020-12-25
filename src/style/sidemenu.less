@@ -1,0 +1,37 @@
+.sidemenu {
+  width: 1248px;
+  margin: 0 auto;
+
+  .ant-header-fixedHeader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: 100%;
+    transition: width 0.2s;
+
+    &.ant-header-side-opened {
+      width: calc(100% - 256px);
+    }
+
+    &.ant-header-side-closed {
+      width: calc(100% - 80px);
+    }
+  }
+
+  .ant-fixed-sidemenu {
+    position: fixed;
+    max-width: 256px;
+    max-height: calc(100vh - 64px - 20px - 20px - 50px);
+    overflow-y: auto;
+  }
+
+  &.content-width-Fluid {
+    width: 100%;
+    .ant-fixed-sidemenu {
+      left: 20px;
+      margin-left: 0;
+    }
+  }
+
+}

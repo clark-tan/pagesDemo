@@ -1,0 +1,140 @@
+.layout.ant-layout {
+  .top-nav-header-index {
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    position: relative;
+    transition: background 0.3s, width 0.2s;
+
+    .header-index-wide {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      height: 64px;
+      line-height: 64px;
+
+      .header-index-left {
+        flex: 0 0 75%;
+        display: flex;
+
+        .logo.top-nav-header {
+          width: 100%;
+          position: relative;
+          transition: all 0.3s;
+          overflow: hidden;
+
+          img,
+          svg {
+            display: inline-block;
+            vertical-align: middle;
+            height: 28px;
+          }
+
+          h1 {
+            color: #fff;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 26px;
+          }
+        }
+      }
+
+      .header-index-right {
+        flex: 0 0 25%;
+        display: flex;
+        justify-content: flex-end;
+
+        .content-box {
+          .action {
+            max-width: 140px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    &.light {
+      background-color: #fff;
+      .header-index-wide {
+        .header-index-left {
+          .logo {
+            h1 {
+              color: rgba(48, 109, 164, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-index-menu{
+  background: linear-gradient(90deg, #4087CA, #1568B7) no-repeat;
+
+  .ant-menu.ant-menu-horizontal {
+    background: inherit;
+    max-width: 1200px;
+    flex: 0 0 100vw;
+    display: flex;
+    margin: auto;
+    .ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+      background: linear-gradient(90deg, #4087CA, #1568B7) no-repeat;
+    }
+    .ant-menu-item,
+    .ant-menu-submenu {
+      flex: 1 0 auto;
+      display: inline-flex;
+      justify-content: center;
+    }
+  }
+}
+
+.topmenu {
+  width: 1248px;
+  margin: 0 auto;
+  .ant-header-fixedHeader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: 100%;
+    transition: width 0.2s;
+
+    &.ant-header-side-opened {
+      width: 100%;
+    }
+
+    &.ant-header-side-closed {
+      width: 100%;
+    }
+  }
+  /* 必须为 topmenu  才能启用流式布局 */
+  &.content-width-Fluid {
+    max-width: 100vw;
+    margin: 0 auto;
+    .header-index-wide {
+      max-width: unset;
+      .header-index-left {
+        flex: 1 1 100vw;
+        .logo {
+          margin-left: 25px;
+        }
+        .ant-menu.ant-menu-horizontal {
+          max-width: calc(100vw -  25px);
+          flex: 1 1 calc(100vw -  25px);
+        }
+      }
+      .header-index-right {
+        margin-right: 25px;
+      }
+    }
+
+    .page-header-index-wide {
+      max-width: unset;
+    }
+  }
+}
+
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+  background: linear-gradient(90deg, #4087CA, #1568B7) no-repeat;
+}
